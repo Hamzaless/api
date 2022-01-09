@@ -1,0 +1,41 @@
+//ShoseApi Main 1
+ConnectData:("localhost://74630*GetRandomPort=False")
+ConnectProject:("https://github.com/hamzampbstars/api"*AdminMode=True(Kısıtlandı*0))
+inject(FormApi.dll)
+inject.FormApi:dll(LoginApi.dll)
+
+//FormApi.dll{(
+GetNugetPackage("MCServerStatus?latest"=e);
+
+e.execute
+GetNugetPackage("BunifuUI?2.0.3"=e);
+
+e.Execute
+GetNugetPackage("CMLLIB?latest"=e);
+
+e.execute)}
+
+//LoginApi.dll{
+
+Path();
+Execute(parter1.2)
+if (ServerSecureLevel*=>3*)
+else 
+{
+Kill.Api
+SelfDelete(*3)
+}
+
+}
+
+user interface
+
+{
+GetPlayerData:(mc.shoseturk.com)
+Execute("Dropbox.api=HttpGet://Dropbox.io/api)
+}
+
+
+if all? Sucess
+
+Exit and run this program?*api.dll self delete
